@@ -23,6 +23,8 @@ jobs:
     - name: cp cfg
       run: cp -f defconfig/mt7986-ax6000.config .config
 
-
+    - name: make menuconfig
+      run: make menuconfig
+      
     - name: Install dependencies
       run: make
